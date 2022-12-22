@@ -32,7 +32,7 @@ function About() {
                         mollitia nobis perferendis, placeat reiciendis repellendus reprehenderit sit soluta suscipit
                         totam. Nisi, quae.
                     </p>
-                    <Link href='/#projects'>
+                    <Link href='/#projects' legacyBehavior>
                         <p className='py-2 text-gray-300 underline cursor-pointer'>
                             Check out some of my latest projects.
                             <span><svg className="w-5 h-5 ml-2 inline" fill="currentColor" viewBox="0 0 20 20"
