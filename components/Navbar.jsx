@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { NextRouter, useRouter } from "next/router";
+import logo from "../public/assets/logo-white.png";
 
 function Navbar(props) {
   const [nav, setNav] = useState(false);
@@ -34,12 +35,7 @@ function Navbar(props) {
         }
       >
         <Link scroll={false} href="/#home">
-          <Image
-            src="/../public/assets/logo-white.png"
-            width="75"
-            height="30"
-            alt=""
-          />
+          <Image src={logo} width="75" height="30" alt="" />
         </Link>
 
         <div>
