@@ -137,19 +137,33 @@ function Navbar(props) {
 
             <div className="pt-40">
               <p className="uppercase tracking-widest">Let&apos;s Connect</p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="p-3 cursor-pointer hover:text-black hover:bg-white hover:rounded-full transition-all duration-300">
-                  <FaLinkedin size={30} />
-                </div>
-                <div className="p-3 cursor-pointer hover:text-black hover:bg-white hover:rounded-full transition-all duration-300">
-                  <FaGithub size={30} />
-                </div>
-                <div className="p-3 cursor-pointer hover:text-black hover:bg-white hover:rounded-full transition-all duration-300">
-                  <AiOutlineMail size={30} />
-                </div>
-                <div className="p-3 cursor-pointer hover:text-black hover:bg-white hover:rounded-full transition-all duration-300">
-                  <BsPersonLinesFill size={30} />
-                </div>
+              <div className="flex items-center justify-around my-4 w-full sm:w-[80%]">
+                <a
+                  href="https://www.linkedin.com/in/jeff-derbes/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="p-3 cursor-pointer hover:text-black hover:bg-white hover:rounded-full transition-all duration-300">
+                    <FaLinkedin size={30} />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/Jeff-Derbes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="p-3 cursor-pointer hover:text-black hover:bg-white hover:rounded-full transition-all duration-300">
+                    <FaGithub size={30} />
+                  </div>
+                </a>
+                <Link href="/#contact">
+                  <div
+                    className="p-3 cursor-pointer hover:text-black hover:bg-white hover:rounded-full transition-all duration-300"
+                    onClick={handleNav}
+                  >
+                    <AiOutlineMail size={30} />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
