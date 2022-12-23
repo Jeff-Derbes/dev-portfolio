@@ -26,7 +26,7 @@ function lavenderArt(props) {
         <div className="col-span-4">
           <p>Project</p>
           <h2 className="py-4">Overview</h2>
-          <p className="pb-10">
+          <p className="pb-10 leading-relaxed max-w-[80%]">
             This website was built for a client who wanted to create a shopify
             website for her business. The client&apos;s needs were relatively
             simple and I thought this was a great use-case for Shopify&apos;s

@@ -17,7 +17,7 @@ function Main(props) {
           </h1>
           <h2 className="py-2">Full-Stack Developer</h2>
 
-          <p className="py-4 max-w-[70%] m-auto">
+          <p className="py-4 max-w-[80%] m-auto text-lg">
             Let&apos;s build something together!
           </p>
           <div className="flex items-center justify-around max-w-[330px] m-auto py-4">
