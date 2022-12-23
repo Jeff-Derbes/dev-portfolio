@@ -13,15 +13,14 @@ function Main(props) {
       <div className="max-w-[1240px] w-full  mx-auto p-2 flex justify-center items-center">
         <div>
           <h1 className="py-4">
-            Hi, I'm <span className="text-[#40dbfc]">Jeff</span>
+            Hi, I&apos;m <span className="text-[#40dbfc]">Jeff</span>
           </h1>
-          <h2 className="py-2">Full-stack Developer</h2>
+          <h2 className="py-2">Full-Stack Developer</h2>
+
           <p className="py-4 max-w-[70%] m-auto">
-            I'm a full-stack web developer specializing in building elegant web
-            experiences. I build responsive full-stack apps and love learning
-            and implementing new technologies
+            Let&apos;s build something together!
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+          <div className="flex items-center justify-around max-w-[330px] m-auto py-4">
             <a
               href="https://www.linkedin.com/in/jeff-derbes/"
               target="_blank"
@@ -56,7 +55,7 @@ function Main(props) {
       </div>
       <div>
         <Image
-          className="w-screen max-h-[250px]"
+          className="w-screen max-h-[200px]"
           src={wave}
           alt="person outline"
         />

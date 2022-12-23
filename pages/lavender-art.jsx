@@ -18,46 +18,35 @@ function lavenderArt(props) {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Lavender Art</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h3>React JS / Tailwind / Hydrogen</h3>
         </div>
       </div>
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
           <p>Project</p>
-          <h2>Overview</h2>
+          <h2 className="py-4">Overview</h2>
           <p className="pb-10">
-            I built this application in React JS and is hosted on GitHub pages.
-            This app features user authentication with firebase as well as the
-            firestore cloud storage database. This application is pulling movie
-            data from an the IMDB movie API and displaying different categories.
-            It features horizontal sliding and a featured selection. The
-            useContext hook is also being implemented for app-wide state
-            management.
+            This website was built for a client who wanted to create a shopify
+            website for her business. The client&apos;s needs were relatively
+            simple and I thought this was a great use-case for Shopify&apos;s
+            Hydrogen framework. The framework uses React JS, Tailwind, and
+            GraphQL to connect to a Shopify storefront API.
           </p>
           <a
-            href="https://github.com/fireclint/netflix-react-tailwind"
+            href="https://www.lavenderart.co/"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4 mr-4 border hover:text-slate-900 hover:bg-slate-100 hover:border-slate-900 transition-all duration-300">
-              Code
-            </button>
-          </a>
-          <a
-            href="https://fireclint.github.io/netflix-react-tailwind/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="px-8 py-2 mt-4 mx-4 border hover:text-slate-900 hover:bg-slate-100 hover:border-slate-900 transition-all duration-300">
-              Demo
+            <button className="px-8 py-2 mt-4  border hover:text-slate-900 hover:bg-slate-100 hover:border-slate-900 transition-all duration-300">
+              Visit Site
             </button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 border rounded-xl py-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
-            <div className="grid grid-cols-3 md:grid-cols-1">
+            <div className="grid grid-cols-3 md:grid-cols-1 px-4">
               <p className="py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
@@ -65,13 +54,10 @@ function lavenderArt(props) {
                 <RiRadioButtonFill className="pr-1" /> Tailwind
               </p>
               <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Javascript
+                <RiRadioButtonFill className="pr-1" /> Shopify
               </p>
               <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Firebase
-              </p>
-              <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> IMDB API
+                <RiRadioButtonFill className="pr-1" /> GraphQL
               </p>
             </div>
           </div>
