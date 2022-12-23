@@ -17,24 +17,6 @@ function Projects(props) {
             backgroundImg={lavenderArt}
             projectUrl="/lavender-art"
           />
-
-          <ProjectItem
-            title="Lavender Art"
-            backgroundImg={lavenderArt}
-            projectUrl="/lavender-art"
-          />
-
-          <ProjectItem
-            title="Lavender Art"
-            backgroundImg={lavenderArt}
-            projectUrl="/lavender-art"
-          />
-
-          <ProjectItem
-            title="Lavender Art"
-            backgroundImg={lavenderArt}
-            projectUrl="/lavender-art"
-          />
         </div>
       </div>
     </div>

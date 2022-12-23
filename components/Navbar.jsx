@@ -1,12 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
+import { NextRouter, useRouter } from "next/router";
 
 function Navbar(props) {
   const [nav, setNav] = useState(false);
+  const [navTransparent, setNavTransparent] = useState(false);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath === "/lavender-art") {
+      setNavTransparent(true);
+    } else {
+      setNavTransparent(false);
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -14,31 +26,39 @@ function Navbar(props) {
 
   return (
     <div className="fixed w-full h-20 z-[100]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-slate-700">
-        <Image
-          src="/../public/assets/logo-white.png"
-          width="75"
-          height="30"
-          alt=""
-        />
+      <div
+        className={
+          navTransparent
+            ? "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-transparent"
+            : "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-slate-700"
+        }
+      >
+        <Link scroll={false} href="/#home">
+          <Image
+            src="/../public/assets/logo-white.png"
+            width="75"
+            height="30"
+            alt=""
+          />
+        </Link>
 
         <div>
           <ul className="hidden md:flex">
-            <Link href="/" legacyBehavior>
+            <Link href="/#home" scroll={false} legacyBehavior>
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="#about" legacyBehavior>
+            <Link href="/#about" scroll={false} legacyBehavior>
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="#skills" legacyBehavior>
+            <Link href="/#skills" scroll={false} legacyBehavior>
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="#projects" legacyBehavior>
+            <Link href="/#projects" scroll={false} legacyBehavior>
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
             </Link>
-            <Link href="#contact" legacyBehavior>
+            <Link href="/#contact" scroll={false} legacyBehavior>
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
@@ -88,20 +108,30 @@ function Navbar(props) {
 
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/" legacyBehavior>
-                <li className="py-4 text-sm">Home</li>
+              <Link href="/#home" scroll={false} legacyBehavior>
+                <li className="py-4 text-sm" onClick={handleNav}>
+                  Home
+                </li>
               </Link>
-              <Link href="/" legacyBehavior>
-                <li className="py-4 text-sm">About</li>
+              <Link href="/#about" scroll={false} legacyBehavior>
+                <li className="py-4 text-sm" onClick={handleNav}>
+                  About
+                </li>
               </Link>
-              <Link href="/" legacyBehavior>
-                <li className="py-4 text-sm">Skills</li>
+              <Link href="/#skills" scroll={false} legacyBehavior>
+                <li className="py-4 text-sm" onClick={handleNav}>
+                  Skills
+                </li>
               </Link>
-              <Link href="/" legacyBehavior>
-                <li className="py-4 text-sm">Projects</li>
+              <Link href="/#projects" scroll={false} legacyBehavior>
+                <li className="py-4 text-sm" onClick={handleNav}>
+                  Projects
+                </li>
               </Link>
-              <Link href="/" legacyBehavior>
-                <li className="py-4 text-sm">Contact</li>
+              <Link href="/#contact" scroll={false} legacyBehavior>
+                <li className="py-4 text-sm" onClick={handleNav}>
+                  Contact
+                </li>
               </Link>
             </ul>
 

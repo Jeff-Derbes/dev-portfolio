@@ -12,7 +12,7 @@ html {
 
 @layer base {
     body {
-        @apply bg-slate-800 text-slate-100 tracking-wide
+        @apply bg-slate-900 text-slate-100 tracking-wide
     }
 
     h1, h2, h3, h4, h5, h6 {
