@@ -6,11 +6,15 @@ import { BsPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 import contact from "../public/assets/contact.svg";
+import Waves from "./Waves";
 
 function Main(props) {
   return (
-    <div id="home" className="w-full h-screen grid place-items-end text-center">
-      <div className="max-w-[1240px] w-full  mx-auto p-2 flex justify-center items-center">
+    <div
+      id="home"
+      className="w-full h-screen relative grid place-items-end text-center "
+    >
+      <div className="max-w-[1240px] w-full  mx-auto p-2 flex justify-center items-center pt-[275px]">
         <div>
           <h1 className="py-4">
             Hi, I&apos;m <span className="text-[#40dbfc]">Jeff</span>
@@ -53,12 +57,8 @@ function Main(props) {
           </div>
         </div>
       </div>
-      <div>
-        <Image
-          className="w-screen max-h-[200px]"
-          src={wave}
-          alt="person outline"
-        />
+      <div className="w-full ">
+        <Waves />
       </div>
     </div>
   );

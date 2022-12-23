@@ -16,12 +16,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="">
-        <Main />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+      <main>
+        <section className="pb-[75px] overflow-hidden">
+          <Main />
+        </section>
+        <section>
+          <About />
+        </section>
+        <section>
+          <Skills />
+        </section>
+        <section>
+          <Projects />
+        </section>
+        <section>
+          <Contact />
+        </section>
       </main>
     </>
   );

@@ -31,7 +31,7 @@ function Navbar(props) {
         className={
           navTransparent
             ? "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-transparent"
-            : "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-slate-700"
+            : "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-slate-800"
         }
       >
         <Link scroll={false} href="/#home">

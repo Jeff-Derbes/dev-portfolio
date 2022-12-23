@@ -125,7 +125,7 @@ function Contact(props) {
           </div>
         </div>
         <div className="flex justify-center py-12">
-          <Link href="/">
+          <Link href="/#home" scroll={false}>
             <div className="rounded-full p-4 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp className="text-[#40dbfc]" size={30} />
             </div>
