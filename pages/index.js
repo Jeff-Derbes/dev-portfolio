@@ -26,10 +26,10 @@ export default function Home() {
         <section>
           <Skills />
         </section>
-        <section>
+        <section id="projects" className="pt-[50px]">
           <Projects />
         </section>
-        <section>
+        <section id="contact" className="pt-[100px]">
           <Contact />
         </section>
       </main>

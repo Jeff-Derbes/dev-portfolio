@@ -75,7 +75,7 @@ function Navbar(props) {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-slate-700 p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-slate-800 p-10 ease-in duration-500"
               : "fixed h-screen left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
