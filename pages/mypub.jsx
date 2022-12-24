@@ -33,11 +33,7 @@ function lavenderArt(props) {
             It uses React JS on the frontend and Firebase for data, hosting, and
             authentication.
           </p>
-          <a
-            href="https://www.lavenderart.co/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://mypub-app.com/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4  border hover:text-slate-900 hover:bg-slate-100 hover:border-slate-900 transition-all duration-300">
               Visit Site
             </button>
