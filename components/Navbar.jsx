@@ -81,12 +81,7 @@ function Navbar(props) {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image
-                src="/../public/assets/logo-white.png"
-                width="87"
-                height="35"
-                alt="logo"
-              />
+              <Image src={logo} width="87" height="35" alt="logo" />
               <div
                 className="border-gray-100 border-[1px] rounded-full p-3 cursor-pointer"
                 onClick={handleNav}

@@ -29,7 +29,8 @@ export default function Home() {
         <section id="projects" className="pt-[50px]">
           <Projects />
         </section>
-        <section id="contact" className="pt-[100px]">
+        <section id="contact" className="pt-[150px]">
+          r
           <Contact />
         </section>
       </main>
