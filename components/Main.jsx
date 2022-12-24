@@ -14,7 +14,7 @@ function Main(props) {
       id="home"
       className="w-full h-screen relative grid place-items-end text-center "
     >
-      <div className="max-w-[1240px] w-full  mx-auto p-2 flex justify-center items-center pt-[275px]">
+      <div className="max-w-[1240px] w-full  mx-auto p-2 flex justify-center items-center md:pt-[255px] pt-[100px]">
         <div>
           <h1 className="py-4">
             Hi, I&apos;m <span className="text-[#40dbfc]">Jeff</span>
@@ -57,7 +57,7 @@ function Main(props) {
           </div>
         </div>
       </div>
-      <div className="w-full ">
+      <div className="w-full">
         <Waves />
       </div>
     </div>

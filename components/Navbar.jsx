@@ -82,11 +82,8 @@ function Navbar(props) {
           <div>
             <div className="flex w-full items-center justify-between">
               <Image src={logo} width="87" height="35" alt="logo" />
-              <div
-                className="border-gray-100 border-[1px] rounded-full p-3 cursor-pointer"
-                onClick={handleNav}
-              >
-                <AiOutlineClose />
+              <div className=" cursor-pointer" onClick={handleNav}>
+                <AiOutlineClose size={30} />
               </div>
             </div>
 
@@ -126,7 +123,7 @@ function Navbar(props) {
               </Link>
             </ul>
 
-            <div className="pt-40">
+            <div className="md:pt-40 pt-28">
               <p className="uppercase tracking-widest">Let&apos;s Connect</p>
               <div className="flex items-center justify-around my-4 w-full sm:w-[80%]">
                 <a
