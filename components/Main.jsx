@@ -57,7 +57,7 @@ function Main(props) {
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-[125%] md:w-full">
         <Waves />
       </div>
     </div>
