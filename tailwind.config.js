@@ -11,8 +11,8 @@ module.exports = {
         accent: "#40dbfc",
       },
       backgroundImage: {
-        "hero-pattern": "url('../public/assets/hero-img.svg')",
-        "hero-mobile": "url('../public/assets/mobile-hero.svg')",
+        "hero-pattern": "url('/public/assets/hero-img.svg')",
+        "hero-mobile": "url('/public/assets/mobile-hero.svg')",
       },
     },
   },
