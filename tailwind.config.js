@@ -5,7 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-pattern": "url('../public/assets/hero-img.svg')",
+        "hero-mobile": "url('../public/assets/mobile-hero.svg')",
+      },
+    },
   },
   plugins: [],
-}
+};

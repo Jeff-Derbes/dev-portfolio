@@ -17,14 +17,11 @@ export default function Home() {
         <link rel="icon" href="/assets/logo-white.png" />
       </Head>
       <main>
-        <section className="pb-[75px] overflow-hidden">
+        <section className="pb-[75apx] overflow-hidden">
           <Main />
         </section>
         <section>
           <About />
-        </section>
-        <section>
-          <Skills />
         </section>
         <section id="projects" className="pt-[50px]">
           <Projects />

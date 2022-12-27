@@ -17,13 +17,10 @@ import Skillcard from "./Skillcard";
 
 function Skills() {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2">
+    <div id="skills" className="w-full flex-col justify-center items-center">
+      <h2 className="uppercase pb-10 tracking-widest text-[#40dbfc]">Skills</h2>
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#40dbfc]">
-          Skills
-        </p>
-        <h2 className="py-4">What I Can Do</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
           <Skillcard title="HTML" image={Html} />
           <Skillcard title="CSS" image={Css} />
           <Skillcard title="JavaScript" image={Javascript} />

@@ -31,7 +31,7 @@ function Navbar(props) {
         className={
           navTransparent
             ? "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-transparent"
-            : "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-slate-800"
+            : "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#242526]"
         }
       >
         <Link scroll={false} href="/#home">
@@ -41,21 +41,27 @@ function Navbar(props) {
         <div>
           <ul className="hidden md:flex">
             <Link href="/#home" scroll={false} legacyBehavior>
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#40dbfc]">
+                Home
+              </li>
             </Link>
             <Link href="/#about" scroll={false} legacyBehavior>
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#40dbfc]">
+                About
+              </li>
             </Link>
             <Link href="/#skills" scroll={false} legacyBehavior>
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#40dbfc]">
+                Skills
+              </li>
             </Link>
             <Link href="/#projects" scroll={false} legacyBehavior>
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:text-[#40dbfc]">
                 Projects
               </li>
             </Link>
             <Link href="/#contact" scroll={false} legacyBehavior>
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:text-[#40dbfc]">
                 Contact
               </li>
             </Link>
@@ -75,8 +81,8 @@ function Navbar(props) {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-slate-800 p-10 ease-in duration-500"
-              : "fixed h-screen left-[-100%] top-0 p-10 ease-in duration-500"
+              ? "fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#242526] p-10 ease-in duration-500"
+              : "fixed h-screen right-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
@@ -123,8 +129,7 @@ function Navbar(props) {
               </Link>
             </ul>
 
-            <div className="md:pt-40 pt-28">
-              <p className="uppercase tracking-widest">Let&apos;s Connect</p>
+            <div className="md:pt-40 pt-10">
               <div className="flex items-center justify-around my-4 w-full sm:w-[80%]">
                 <a
                   href="https://www.linkedin.com/in/jeff-derbes/"

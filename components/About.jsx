@@ -2,16 +2,19 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import me from "../public/assets/me.jpeg";
+import Skills from "./Skills";
 
 function About() {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#40dbfc]">
+    <div
+      id="about"
+      className="w-full max-w-[1240px] md:h-screen p-2 grid md:grid-cols-2 gap-x-36 mx-auto justify-items-center items-center py-16"
+    >
+      <div className="md:flex">
+        <div className="md:max-w-[700px]">
+          <h2 className="uppercase pb-10 tracking-widest text-[#40dbfc]">
             About
-          </p>
-          <h2 className="py-4">Who I Am</h2>
+          </h2>
 
           <p className="py-2 text-gray-300 leading-relaxed">
             A software engineer who values learning and growing with people,
@@ -31,8 +34,8 @@ function About() {
             Astro, ASP.NET, and Shopify&apos;s hydrogen framework.
           </p>
           <Link href="/#projects" scroll={false} legacyBehavior>
-            <p className="py-2 text-gray-300 underline cursor-pointer">
-              Check out some of my latest projects.
+            <p className="py-4 text-gray-300 underline cursor-pointer">
+              Check out my work
               <span>
                 <svg
                   className="w-5 h-5 ml-2 inline"
@@ -47,9 +50,9 @@ function About() {
             </p>
           </Link>
         </div>
-        <div className="md:w-full md:h-auto w-[300px] m-auto  rounded-xl flex items-center justify-center p-4 ">
-          <Image src={me} className="rounded-xl" alt="/" />
-        </div>
+      </div>
+      <div className="py-16">
+        <Skills />
       </div>
     </div>
   );
