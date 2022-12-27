@@ -15,16 +15,18 @@ function Main(props) {
     >
       <div className="w-full relative mx-auto flex justify-center md:justify-start lg:ml-64 md:ml-32 items-center md:text-left pb-32 md:mt-64">
         <div>
-          <h1 className="py-4 sm:text-4xl lg:text-8xl">
+          <h1 className="py-4 pt-8 text-4xl sm:text-4xl lg:text-8xl">
             Hi, I&apos;m <span className="text-accent">Jeff</span>
           </h1>
-          <h2 className="py-4 lg:text-7xl sm:text-3xl">Full-Stack Developer</h2>
+          <h2 className="py-4 lg:text-7xl sm:text-3xl text-2xl">
+            Full-Stack Developer
+          </h2>
           <h3 className="py-4 lg:text-3xl sm:text-xl">
             I like to build cool things on the web.
           </h3>
 
           <Link href="/#contact" scroll={false}>
-            <button className="relative inline-flex items-center justify-center p-0.5 mt-4 md:mt-12 overflow-hidden text-xl font-medium rounded-lg bg-accent ">
+            <button className="relative inline-flex items-center justify-center p-0.5 mt-4 md:mt-12 overflow-hidden md:text-xl text-l font-medium rounded-lg bg-accent ">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-primary rounded-md hover:bg-accent hover:text-black">
                 Let&apos;s Connect{" "}
                 <span>
