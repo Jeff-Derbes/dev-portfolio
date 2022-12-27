@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import contact from "../public/assets/contact.svg";
+import me from "../public/assets/me.jpeg";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
@@ -11,60 +11,8 @@ function Contact(props) {
   return (
     <div className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
-        <h2 className="pb-16 tracking-widest uppercase text-[#40dbfc]">
-          Contact
-        </h2>
-        <div className="grid lg:grid-cols-5 gap-8">
-          {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full rounded-xl p-4">
-            <div className="lg:p-4 h-full ">
-              <div>
-                <Image
-                  className="max-h-[250px] py-10"
-                  src={contact}
-                  alt="person outline"
-                />
-              </div>
-              <div>
-                <h2 className="py-2">Jeff Derbes</h2>
-                <p>Full-Stack Developer</p>
-                <p className="py-4">
-                  I&apos;m always open to meeting and connecting with people
-                  about new ideas or opportunities. Contact me and let&apos;s
-                  talk.
-                </p>
-              </div>
-              <div>
-                <p className="uppercase pt-8">Connect With Me</p>
-                <div className="flex items-center justify-between py-4">
-                  <a
-                    href="https://www.linkedin.com/in/jeff-derbes/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="p-3 cursor-pointer hover:text-black hover:bg-[#40dbfc] hover:rounded-full transition-all duration-300">
-                      <FaLinkedinIn size={30} />
-                    </div>
-                  </a>
-                  <a
-                    href="https://github.com/Jeff-Derbes"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="p-3 cursor-pointer hover:text-black hover:bg-[#40dbfc] hover:rounded-full transition-all duration-300">
-                      <FaGithub size={30} />
-                    </div>
-                  </a>
-
-                  <div className="p-3 cursor-pointer hover:text-black hover:bg-[#40dbfc] hover:rounded-full transition-all duration-300">
-                    <AiOutlineMail size={30} />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* right */}
+        <h2 className="pb-16 tracking-widest uppercase text-accent">Contact</h2>
+        <div className="flex-col max-w-[90%] md:max-w-[500px] mx-auto justify-center items-center ">
           <div className="col-span-3 w-full h-auto border rounded-xl lg:p-4">
             <div className="p-4">
               <form
@@ -72,13 +20,14 @@ function Contact(props) {
                 method="POST"
                 encType="multipart/form-data"
               >
-                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                <div className="flex-col w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="name"
+                      required={true}
                     />
                   </div>
                 </div>
@@ -88,27 +37,58 @@ function Contact(props) {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
                     name="email"
+                    required={true}
                   />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
                     className="border-2 rounded-lg p-3 border-gray-300"
-                    rows="5"
+                    rows="3"
                     name="message"
+                    required={true}
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
                   Send Message
                 </button>
               </form>
+              <div className="lg:p-4 h-full ">
+                <div>
+                  <div className="flex items-center justify-around py-4">
+                    <Link
+                      href="https://www.linkedin.com/in/jeff-derbes/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className="p-3 cursor-pointer hover:text-accent   transition-all duration-300">
+                        <FaLinkedinIn size={30} />
+                      </div>
+                    </Link>
+                    <Link
+                      href="https://github.com/Jeff-Derbes"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className="p-3 cursor-pointer hover:text-black hover:text-accent  transition-all duration-300">
+                        <FaGithub size={30} />
+                      </div>
+                    </Link>
+                    <Link href="https://www.instagram.com/jeffderbes/">
+                      <div className="p-3 cursor-pointer hover:text-black hover:text-accent  transition-all duration-300">
+                        <AiOutlineInstagram size={30} />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div className="flex justify-center py-12">
           <Link href="/#home" scroll={false}>
             <div className="rounded-full p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp className="text-[#40dbfc]" size={30} />
+              <HiOutlineChevronDoubleUp className="text-accent" size={30} />
             </div>
           </Link>
         </div>

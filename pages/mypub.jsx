@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function lavenderArt(props) {
   return (
-    <div className="w-full">
+    <div className="w-full pt-[80px]">
       <div className="w-screen h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[40vh] bg-black/70 z-10" />
         <Image
@@ -17,7 +17,7 @@ function lavenderArt(props) {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Lavender Art</h2>
+          <h2 className="py-2">MyPub</h2>
           <h3>React JS / CSS / Firebase</h3>
         </div>
       </div>
@@ -34,8 +34,10 @@ function lavenderArt(props) {
             authentication.
           </p>
           <a href="https://mypub-app.com/" target="_blank" rel="noreferrer">
-            <button className="px-8 py-2 mt-4  border hover:text-slate-900 hover:bg-slate-100 hover:border-slate-900 transition-all duration-300">
-              Visit Site
+            <button className="relative inline-flex items-center justify-center p-0.5 mt-4 md:mt-12 overflow-hidden text-l font-medium rounded-lg bg-accent ">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-primary rounded-md hover:bg-accent hover:text-black">
+                Visit Site
+              </span>
             </button>
           </a>
         </div>

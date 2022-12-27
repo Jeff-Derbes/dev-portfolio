@@ -18,9 +18,8 @@ import Skillcard from "./Skillcard";
 function Skills() {
   return (
     <div id="skills" className="w-full flex-col justify-center items-center">
-      <h2 className="uppercase pb-10 tracking-widest text-[#40dbfc]">Skills</h2>
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <Skillcard title="HTML" image={Html} />
           <Skillcard title="CSS" image={Css} />
           <Skillcard title="JavaScript" image={Javascript} />

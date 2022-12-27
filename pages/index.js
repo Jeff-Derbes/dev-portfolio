@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/assets/logo-white.png" />
       </Head>
       <main>
-        <section className="pb-[75apx] overflow-hidden">
+        <section>
           <Main />
         </section>
         <section>

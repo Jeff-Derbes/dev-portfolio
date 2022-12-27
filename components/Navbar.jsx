@@ -9,18 +9,6 @@ import logo from "../public/assets/logo-white.png";
 
 function Navbar(props) {
   const [nav, setNav] = useState(false);
-  const [navTransparent, setNavTransparent] = useState(false);
-
-  const router = useRouter();
-
-  useEffect(() => {
-    if (router.asPath === "/lavender-art") {
-      setNavTransparent(true);
-    } else {
-      setNavTransparent(false);
-    }
-  }, [router]);
-
   const handleNav = () => {
     setNav(!nav);
   };
@@ -29,9 +17,7 @@ function Navbar(props) {
     <div className="fixed w-full h-20 z-[100]">
       <div
         className={
-          navTransparent
-            ? "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-transparent"
-            : "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#242526]"
+          "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-primary"
         }
       >
         <Link scroll={false} href="/#home">
@@ -48,11 +34,6 @@ function Navbar(props) {
             <Link href="/#about" scroll={false} legacyBehavior>
               <li className="ml-10 text-sm uppercase hover:text-[#40dbfc]">
                 About
-              </li>
-            </Link>
-            <Link href="/#skills" scroll={false} legacyBehavior>
-              <li className="ml-10 text-sm uppercase hover:text-[#40dbfc]">
-                Skills
               </li>
             </Link>
             <Link href="/#projects" scroll={false} legacyBehavior>
@@ -81,8 +62,8 @@ function Navbar(props) {
         <div
           className={
             nav
-              ? "fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#242526] p-10 ease-in duration-500"
-              : "fixed h-screen right-[-100%] top-0 p-10 ease-in duration-500"
+              ? "fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-primary p-10 ease-in duration-500"
+              : "fixed h-screen right-[-150%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
@@ -112,11 +93,7 @@ function Navbar(props) {
                   About
                 </li>
               </Link>
-              <Link href="/#skills" scroll={false} legacyBehavior>
-                <li className="py-4 text-sm" onClick={handleNav}>
-                  Skills
-                </li>
-              </Link>
+
               <Link href="/#projects" scroll={false} legacyBehavior>
                 <li className="py-4 text-sm" onClick={handleNav}>
                   Projects

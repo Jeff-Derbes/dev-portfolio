@@ -4,21 +4,25 @@ import React from "react";
 
 function ProjectItem({ title, backgroundImg, tech, projectUrl }) {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full rounded-xl group hover:bg-gradient-to-r from-slate-900 to-blue-900">
-      <Image
-        className="rounded-xl group-hover:opacity-10"
-        src={backgroundImg}
-        alt="/"
-      />
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h3 className="text-2xl text-white tracking-wider text-center">
-          {title}
-        </h3>
-        <p className="pb-4 pt-2 text-white text-center">{tech}</p>
-        <Link href={projectUrl} legacyBehavior>
-          <p className="text-center py-3 rounded-lg bg-white w-[140px] text-gray-700 font-bold text-lg cursor-pointer">
-            More Info
-          </p>
+    <div className="max-w-md mx-auto  border rounded-lg shadow-md border-gray-200">
+      <Link href={projectUrl}>
+        <Image className="rounded-t-lg" src={backgroundImg} alt="" />
+      </Link>
+      <div className="p-6 py-8">
+        <Link href={projectUrl}>
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {title}
+          </h5>
+        </Link>
+        <p className="mb-3 py-3 font-normal text-gray-700 dark:text-gray-400">
+          {tech}
+        </p>
+        <Link href={projectUrl} scroll={false}>
+          <button className="relative inline-flex items-center justify-center p-0.5  overflow-hidden text-l font-medium rounded-lg bg-accent ">
+            <span className="relative px-4 py-2 transition-all ease-in duration-75 bg-primary rounded-md hover:bg-accent hover:text-black">
+              Read More
+            </span>
+          </button>
         </Link>
       </div>
     </div>

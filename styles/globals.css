@@ -12,11 +12,11 @@ html {
 
 @layer base {
     body {
-        @apply bg-[#242526] text-slate-100 tracking-wide
+        @apply bg-[#242526] text-neutral-50 tracking-wide
     }
 
     input, textarea {
-        @apply text-slate-900
+        @apply text-neutral-50 bg-neutral-600
     }
 
     h1, h2, h3, h4, h5, h6 {
