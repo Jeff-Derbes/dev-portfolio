@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import {
+  AiOutlineClose,
+  AiOutlineMail,
+  AiOutlineMenu,
+  AiOutlineProfile,
+} from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { NextRouter, useRouter } from "next/router";
@@ -44,6 +49,15 @@ function Navbar(props) {
             <Link href="/#contact" scroll={false} legacyBehavior>
               <li className="ml-10 text-sm uppercase hover:text-[#40dbfc]">
                 Contact
+              </li>
+            </Link>
+            <Link
+              href="https://drive.google.com/file/d/13snX1Be8k-MeMinHmGRQlJagG2zXE5YH/view?usp=share_link"
+              scroll={false}
+              legacyBehavior
+            >
+              <li className="ml-10 text-sm uppercase hover:text-[#40dbfc]">
+                Resunme
               </li>
             </Link>
           </ul>
@@ -102,6 +116,11 @@ function Navbar(props) {
               <Link href="/#contact" scroll={false} legacyBehavior>
                 <li className="py-4 text-sm" onClick={handleNav}>
                   Contact
+                </li>
+              </Link>
+              <Link href="https://drive.google.com/file/d/13snX1Be8k-MeMinHmGRQlJagG2zXE5YH/view?usp=share_link">
+                <li className="py-4 text-sm" onClick={handleNav}>
+                  Resume
                 </li>
               </Link>
             </ul>

@@ -1,6 +1,10 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
+import {
+  AiOutlineInstagram,
+  AiOutlineMail,
+  AiOutlineProfile,
+} from "react-icons/ai";
 
 import { BsPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
@@ -66,6 +70,11 @@ function Main(props) {
             <Link href="https://www.instagram.com/jeffderbes/">
               <div className="p-3 cursor-pointer hover:text-black hover:text-accent  transition-all duration-300">
                 <AiOutlineInstagram size={30} />
+              </div>
+            </Link>
+            <Link href="https://drive.google.com/file/d/13snX1Be8k-MeMinHmGRQlJagG2zXE5YH/view?usp=share_link">
+              <div className="p-3 cursor-pointer hover:text-black hover:text-accent  transition-all duration-300">
+                <AiOutlineProfile size={30} />
               </div>
             </Link>
           </div>
