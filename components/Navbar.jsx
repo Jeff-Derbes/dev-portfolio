@@ -57,7 +57,7 @@ function Navbar(props) {
               legacyBehavior
             >
               <li className="ml-10 text-sm uppercase hover:text-[#40dbfc]">
-                Resunme
+                Resume
               </li>
             </Link>
           </ul>

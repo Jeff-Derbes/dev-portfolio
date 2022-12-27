@@ -25,10 +25,11 @@ function About() {
             </p>
             <p className="py-2 text-gray-300 leading-relaxed">
               I love working with frontend tech and building elegant user
-              interfaces but I have spent considerable time working with backend
-              technologies. I like to dedicate time to further developing my
-              skills and I have recently really enjoyed working with NextJS,
-              Astro, ASP.NET, and Shopify&apos;s hydrogen framework.
+              interfaces, but I have spent considerable time working with
+              backend technologies. I like to dedicate time to further
+              developing my skills and I have recently really enjoyed working
+              with NextJS, Astro, ASP.NET, and Shopify&apos;s hydrogen
+              framework.
             </p>
             <Link href="/#projects" scroll={false} legacyBehavior>
               <p className="py-6 text-gray-300 underline cursor-pointer">
