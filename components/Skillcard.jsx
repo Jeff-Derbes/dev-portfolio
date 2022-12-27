@@ -4,8 +4,8 @@ import Css from "../public/assets/skills/css.png";
 
 function Skillcard({ title, image }) {
   return (
-    <div className=" rounded-md bg-gradient-to-r from-[#b9395b] to-[#646ba6] p-0.5 rounded hover:scale-105 ease-in duration-300">
-      <div className="flex justify-around items-center bg-primary h-full w-full p-2">
+    <div className=" rounded-md w-[140px] bg-gradient-to-r from-[#b9395b] to-[#646ba6] p-0.5 rounded hover:scale-105 ease-in duration-300">
+      <div className="flex w-full justify-around items-center bg-primary h-full w-full py-2">
         <div className="max-w-[36px]">
           <Image
             src={image}

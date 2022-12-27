@@ -51,7 +51,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="pt-16 order-1 md:order-2 mb-24 ">
+        <div className="pt-16 md:pl-44 order-1 md:order-2 mb-24 ">
           <Image src={me} alt="me" className="w-[200px] md:w-[350px] rounded" />
         </div>
       </div>
