@@ -7,7 +7,7 @@ import Skills from "./Skills";
 function About() {
   return (
     <div id="about" className="pt-[80px]">
-      <h2 className=" w-full max-w-[1240px] mx-auto md:mb-8 uppercase tracking-widest text-[#40dbfc]">
+      <h2 className="px-2 w-full max-w-[1240px] mx-auto md:mb-8 uppercase tracking-widest text-[#40dbfc]">
         About
       </h2>
       <div className="w-full max-w-[1240px] grid md:grid-cols-2 md:pl-16 mx-auto justify-items-center items-center ">

@@ -4,7 +4,7 @@ import React from "react";
 
 function ProjectItem({ title, backgroundImg, tech, projectUrl }) {
   return (
-    <div className="max-w-md mx-auto  border rounded-lg shadow-md border-gray-200">
+    <div className="md:max-w-md mx-auto max-w-[90%] border rounded-lg shadow-md border-gray-200">
       <Link href={projectUrl}>
         <Image className="rounded-t-lg" src={backgroundImg} alt="" />
       </Link>
