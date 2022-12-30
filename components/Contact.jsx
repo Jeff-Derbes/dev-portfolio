@@ -83,7 +83,7 @@ function Contact(props) {
                         <AiOutlineInstagram size={30} />
                       </div>
                     </Link>
-                    <Link href="https://drive.google.com/file/d/13snX1Be8k-MeMinHmGRQlJagG2zXE5YH/view?usp=share_link">
+                    <Link href="https://drive.google.com/file/d/16MvOydwX-pVZmtZpKj9CB4t1imJctxcc/view?usp=share_link">
                       <div className="p-3 cursor-pointer hover:text-black hover:text-accent  transition-all duration-300">
                         <AiOutlineProfile size={30} />
                       </div>

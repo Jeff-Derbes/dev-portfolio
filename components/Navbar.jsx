@@ -52,7 +52,7 @@ function Navbar(props) {
               </li>
             </Link>
             <Link
-              href="https://drive.google.com/file/d/13snX1Be8k-MeMinHmGRQlJagG2zXE5YH/view?usp=share_link"
+              href="https://drive.google.com/file/d/16MvOydwX-pVZmtZpKj9CB4t1imJctxcc/view?usp=share_link"
               scroll={false}
               legacyBehavior
             >
@@ -118,7 +118,7 @@ function Navbar(props) {
                   Contact
                 </li>
               </Link>
-              <Link href="https://drive.google.com/file/d/13snX1Be8k-MeMinHmGRQlJagG2zXE5YH/view?usp=share_link">
+              <Link href="https://drive.google.com/file/d/16MvOydwX-pVZmtZpKj9CB4t1imJctxcc/view?usp=share_link">
                 <li className="py-4 text-sm" onClick={handleNav}>
                   Resume
                 </li>
