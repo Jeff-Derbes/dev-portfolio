@@ -6,7 +6,12 @@ function ProjectItem({ title, backgroundImg, tech, projectUrl }) {
   return (
     <div className="md:max-w-md mx-auto max-w-[90%] border rounded-lg shadow-md border-gray-200">
       <Link href={projectUrl}>
-        <Image className="rounded-t-lg" src={backgroundImg} alt="" />
+        <Image
+          className="rounded-t-lg h-[230px] md:h-[380px] "
+          src={backgroundImg}
+          alt=""
+          objectFit="cover"
+        />
       </Link>
       <div className="p-6 py-8">
         <Link href={projectUrl}>
