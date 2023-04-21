@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import lavenderArt from "../public/assets/projects/lavender-art.png";
 import mypub from "../public/assets/projects/mypub.png";
+import scoot from "../public/assets/projects/scoot.png";
 import ProjectItem from "./ProjectItem";
 
 function Projects(props) {
@@ -20,10 +21,17 @@ function Projects(props) {
           />
 
           <ProjectItem
+            title="Scoot"
+            backgroundImg={scoot}
+            projectUrl="/scoot"
+            tech="React, CSS, NextJS"
+          />
+
+          <ProjectItem
             title="MyPub"
             backgroundImg={mypub}
             projectUrl="/mypub"
-            tech="React, Css, Node, Express, MongoDB"
+            tech="React, CSS, Node, Express, MongoDB"
           />
         </div>
       </div>
