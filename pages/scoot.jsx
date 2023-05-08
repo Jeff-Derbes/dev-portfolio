@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import scoot from "../public/assets/projects/scoot.png";
+import scoot from "../public/assets/projects/Scoot.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Head from "next/head";
