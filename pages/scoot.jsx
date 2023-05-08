@@ -41,7 +41,11 @@ function Scoot(props) {
               design. The website is hosted on Vercel and uses CSS without any
               frameworks as I wanted to focus on fundamental CSS skills.
             </p>
-            <a href="scoot-delta.vercel.app" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.scoot-delta.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="relative inline-flex items-center justify-center p-0.5 mt-4 md:mt-12 overflow-hidden text-l font-medium rounded-lg bg-accent ">
                 <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-primary rounded-md hover:bg-accent hover:text-black">
                   Visit Site
