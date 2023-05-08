@@ -1,6 +1,6 @@
 import React from "react";
 import lavenderArt from "../public/assets/projects/lavender-art.png";
-import scoot from "../public/assets/projects/scoot.png";
+import scoot from "../public/assets/projects/Scoot.png";
 import ProjectItem from "./ProjectItem";
 
 function Projects(props) {
