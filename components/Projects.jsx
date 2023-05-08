@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import lavenderArt from "../public/assets/projects/lavender-art.png";
 import mypub from "../public/assets/projects/mypub.png";
 import scoot from "../public/assets/projects/scoot.png";
