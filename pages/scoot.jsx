@@ -42,7 +42,7 @@ function Scoot(props) {
               frameworks as I wanted to focus on fundamental CSS skills.
             </p>
             <a
-              href="https://www.scoot-delta.vercel.app"
+              href="https://scoot-delta.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
