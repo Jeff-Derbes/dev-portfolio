@@ -1,6 +1,5 @@
 import React from "react";
 import lavenderArt from "../public/assets/projects/lavender-art.png";
-import mypub from "../public/assets/projects/mypub.png";
 import scoot from "../public/assets/projects/scoot.png";
 import ProjectItem from "./ProjectItem";
 
@@ -24,13 +23,6 @@ function Projects(props) {
             backgroundImg={scoot}
             projectUrl="/scoot"
             tech="React, CSS, NextJS"
-          />
-
-          <ProjectItem
-            title="MyPub"
-            backgroundImg={mypub}
-            projectUrl="/mypub"
-            tech="React, CSS, Node, Express, MongoDB"
           />
         </div>
       </div>
