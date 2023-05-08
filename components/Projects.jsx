@@ -16,7 +16,7 @@ function Projects(props) {
             title="Lavender Art"
             backgroundImg={lavenderArt}
             projectUrl="/lavender-art"
-            tech="React, Tailwind CSS Shopify,"
+            tech="React, Tailwind CSS, Shopify,"
           />
 
           <ProjectItem
