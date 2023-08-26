@@ -1,6 +1,7 @@
 import React from "react";
 import lavenderArt from "../public/assets/projects/lavender-art.png";
 import scoot from "../public/assets/projects/Scoot.png";
+import quippr from "../public/assets/projects/quippr.jpeg";
 import ProjectItem from "./ProjectItem";
 
 function Projects(props) {
@@ -16,6 +17,13 @@ function Projects(props) {
             backgroundImg={lavenderArt}
             projectUrl="/lavender-art"
             tech="React, Tailwind CSS, Shopify,"
+          />
+
+          <ProjectItem
+            title="Quippr"
+            backgroundImg={quippr}
+            projectUrl="/scoot"
+            tech="NextJS, Tailwind, MongoDB"
           />
 
           <ProjectItem
